@@ -4,6 +4,7 @@ package com.kittyvt.domain.bnk.hirc.body.common;
 import java.util.List;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
+import lombok.Data;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
@@ -13,7 +14,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
     "fx_bypass_bits",
     "fx_chunks"
 })
-
+@Data
 public class NodeInitialFxParameters {
 
     @JsonProperty("is_override_parent_fx")

@@ -2,6 +2,7 @@
 package com.kittyvt.domain.bnk.hirc.body.soundtype.action;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
+import lombok.Data;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
@@ -16,6 +17,7 @@ import java.util.List;
         "ranged_modifiers",
         "params"
 })
+@Data
 public class Action {
 
     @JsonProperty("action_type")

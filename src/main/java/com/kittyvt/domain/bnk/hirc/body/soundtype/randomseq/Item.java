@@ -3,6 +3,7 @@ package com.kittyvt.domain.bnk.hirc.body.soundtype.randomseq;
 
 
 import com.fasterxml.jackson.annotation.JsonInclude;
+import lombok.Data;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
@@ -11,7 +12,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
     "play_id",
     "weight"
 })
-
+@Data
 public class Item {
 
     @JsonProperty("play_id")

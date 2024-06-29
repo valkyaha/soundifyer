@@ -2,6 +2,7 @@
 package com.kittyvt.domain.bnk.hirc.body.soundtype.attenuation;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
+import lombok.Data;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.kittyvt.domain.bnk.hirc.body.common.InitialRtpc;
@@ -15,6 +16,7 @@ import java.util.List;
         "curves",
         "initial_rtpc"
 })
+@Data
 public class Attenuation {
 
     @JsonProperty("is_cone_enabled")

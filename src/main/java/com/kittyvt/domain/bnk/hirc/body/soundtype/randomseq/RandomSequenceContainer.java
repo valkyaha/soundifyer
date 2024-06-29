@@ -3,6 +3,7 @@ package com.kittyvt.domain.bnk.hirc.body.soundtype.randomseq;
 
 
 import com.fasterxml.jackson.annotation.JsonInclude;
+import lombok.Data;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.kittyvt.domain.bnk.hirc.body.common.Children;
@@ -25,7 +26,7 @@ import com.kittyvt.domain.bnk.hirc.body.common.NodeBaseParams;
     "children",
     "playlist"
 })
-
+@Data
 public class RandomSequenceContainer {
 
     @JsonProperty("node_base_params")

@@ -2,8 +2,10 @@
 package com.kittyvt.domain.bnk.hirc.body.common;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
+import lombok.Data;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
+
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
@@ -20,6 +22,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
         "aux4",
         "reflections_aux_bus"
 })
+@Data
 public class AuxParams {
 
     @JsonProperty("unk1")
@@ -37,13 +40,13 @@ public class AuxParams {
     @JsonProperty("unk4")
     public Integer unk4;
     @JsonProperty("aux1")
-    public Integer aux1;
+    public Long aux1;
     @JsonProperty("aux2")
-    public Integer aux2;
+    public Long aux2;
     @JsonProperty("aux3")
-    public Integer aux3;
+    public Long aux3;
     @JsonProperty("aux4")
-    public Integer aux4;
+    public Long aux4;
     @JsonProperty("reflections_aux_bus")
     public Integer reflectionsAuxBus;
 

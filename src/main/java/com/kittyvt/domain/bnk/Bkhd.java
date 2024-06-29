@@ -2,8 +2,10 @@
 package com.kittyvt.domain.bnk;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
+import lombok.Data;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
+
 
 import java.util.List;
 
@@ -16,6 +18,7 @@ import java.util.List;
         "project_id",
         "padding"
 })
+@Data
 public class Bkhd {
 
     @JsonProperty("version")

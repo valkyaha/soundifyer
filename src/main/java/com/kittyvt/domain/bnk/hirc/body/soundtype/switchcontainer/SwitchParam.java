@@ -2,6 +2,7 @@
 package com.kittyvt.domain.bnk.hirc.body.soundtype.switchcontainer;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
+import lombok.Data;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
@@ -27,6 +28,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
     "fade_out_time",
     "fade_in_time"
 })
+@Data
 public class SwitchParam {
 
     @JsonProperty("node_id")

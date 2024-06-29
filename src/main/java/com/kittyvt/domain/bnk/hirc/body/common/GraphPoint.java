@@ -2,8 +2,10 @@ package com.kittyvt.domain.bnk.hirc.body.common;
 
 
 import com.fasterxml.jackson.annotation.JsonInclude;
+import lombok.Data;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
+
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
@@ -11,6 +13,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
         "to",
         "interpolation"
 })
+@Data
 public class GraphPoint {
 
     @JsonProperty("from")

@@ -3,8 +3,9 @@ package com.kittyvt.domain.bnk.hirc;
 
 
 import com.fasterxml.jackson.annotation.JsonInclude;
+import com.kittyvt.domain.bnk.hirc.body.soundtype.actionmixer.ActorMixer;
+import lombok.Data;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.kittyvt.domain.bnk.hirc.body.soundtype.action.Action;
 import com.kittyvt.domain.bnk.hirc.body.soundtype.attenuation.Attenuation;
 import com.kittyvt.domain.bnk.hirc.body.soundtype.events.Event;
@@ -13,17 +14,8 @@ import com.kittyvt.domain.bnk.hirc.body.soundtype.randomseq.RandomSequenceContai
 import com.kittyvt.domain.bnk.hirc.body.soundtype.sound.Sound;
 import com.kittyvt.domain.bnk.hirc.body.soundtype.switchcontainer.SwitchContainer;
 
+@Data
 @JsonInclude(JsonInclude.Include.NON_NULL)
-@JsonPropertyOrder({
-        "Attenuation",
-        "Sound",
-        "RandomSequenceContainer",
-        "SwitchContainer",
-        "LayerContainer",
-        "Action",
-        "Event"
-})
-
 public class HIRCBody {
 
     @JsonProperty("Attenuation")
@@ -38,6 +30,8 @@ public class HIRCBody {
     public LayerContainer layerContainer;
     @JsonProperty("Action")
     public Action action;
+    @JsonProperty("ActorMixer")
+    public ActorMixer actorMixer;
     @JsonProperty("Event")
     public Event event;
 

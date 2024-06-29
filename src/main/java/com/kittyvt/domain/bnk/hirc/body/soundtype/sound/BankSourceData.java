@@ -3,6 +3,7 @@ package com.kittyvt.domain.bnk.hirc.body.soundtype.sound;
 
 import java.util.List;
 import com.fasterxml.jackson.annotation.JsonInclude;
+import lombok.Data;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
@@ -13,6 +14,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
     "media_information",
     "params"
 })
+@Data
 public class BankSourceData {
 
     @JsonProperty("plugin")

@@ -4,6 +4,7 @@ package com.kittyvt.domain.bnk.hirc.body.soundtype.randomseq;
 import java.util.List;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
+import lombok.Data;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
@@ -11,7 +12,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 @JsonPropertyOrder({
     "items"
 })
-
+@Data
 public class Playlist {
 
     @JsonProperty("items")

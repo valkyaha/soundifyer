@@ -4,6 +4,7 @@ package com.kittyvt.domain.bnk.hirc.body.soundtype.switchcontainer;
 import java.util.List;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
+import lombok.Data;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.kittyvt.domain.bnk.hirc.body.common.Children;
@@ -20,7 +21,7 @@ import com.kittyvt.domain.bnk.hirc.body.common.NodeBaseParams;
     "switch_groups",
     "switch_params"
 })
-
+@Data
 public class SwitchContainer {
 
     @JsonProperty("node_base_params")

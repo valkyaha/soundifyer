@@ -3,6 +3,7 @@ package com.kittyvt.domain.bnk.hirc.body.soundtype.sound;
 
 
 import com.fasterxml.jackson.annotation.JsonInclude;
+import lombok.Data;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
@@ -12,7 +13,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
     "in_memory_media_size",
     "source_flags"
 })
-
+@Data
 public class MediaInformation {
 
     @JsonProperty("source_id")

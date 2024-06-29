@@ -2,6 +2,7 @@
 package com.kittyvt.domain.bnk.hirc.body.common;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
+import lombok.Data;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
@@ -19,6 +20,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
         "state_chunk",
         "initial_rtpc"
 })
+@Data
 public class NodeBaseParams {
 
     @JsonProperty("node_initial_fx_parameters")
