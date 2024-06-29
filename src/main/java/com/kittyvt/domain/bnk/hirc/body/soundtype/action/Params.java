@@ -17,4 +17,7 @@ public class Params {
     @JsonProperty("StopEO")
     public StopEO stopEO;
 
+    @JsonProperty("Play")
+    public Play play;
+
 }

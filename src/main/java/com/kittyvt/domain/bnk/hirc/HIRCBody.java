@@ -4,6 +4,7 @@ package com.kittyvt.domain.bnk.hirc;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.kittyvt.domain.bnk.hirc.body.soundtype.actionmixer.ActorMixer;
+import com.kittyvt.domain.bnk.hirc.body.soundtype.effectcustom.EffectCustom;
 import lombok.Data;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.kittyvt.domain.bnk.hirc.body.soundtype.action.Action;
@@ -28,6 +29,8 @@ public class HIRCBody {
     public SwitchContainer switchContainer;
     @JsonProperty("LayerContainer")
     public LayerContainer layerContainer;
+    @JsonProperty("EffectCustom")
+    public EffectCustom effectCustom;
     @JsonProperty("Action")
     public Action action;
     @JsonProperty("ActorMixer")

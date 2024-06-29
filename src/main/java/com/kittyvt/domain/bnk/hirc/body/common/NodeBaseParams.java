@@ -26,13 +26,13 @@ public class NodeBaseParams {
     @JsonProperty("node_initial_fx_parameters")
     public NodeInitialFxParameters nodeInitialFxParameters;
     @JsonProperty("override_attachment_params")
-    public Integer overrideAttachmentParams;
+    public Long overrideAttachmentParams;
     @JsonProperty("override_bus_id")
-    public Integer overrideBusId;
+    public Long overrideBusId;
     @JsonProperty("direct_parent_id")
-    public Integer directParentId;
+    public Long directParentId;
     @JsonProperty("unknown_flags")
-    public Integer unknownFlags;
+    public Long unknownFlags;
     @JsonProperty("node_initial_params")
     public NodeInitialParams nodeInitialParams;
     @JsonProperty("positioning_params")
