@@ -5,6 +5,8 @@ package com.kittyvt.domain.bnk.hirc;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.kittyvt.domain.bnk.hirc.body.soundtype.actionmixer.ActorMixer;
 import com.kittyvt.domain.bnk.hirc.body.soundtype.effectcustom.EffectCustom;
+import com.kittyvt.domain.bnk.hirc.body.soundtype.state.State;
+import com.kittyvt.domain.bnk.hirc.body.soundtype.timemodulator.TimeModulator;
 import lombok.Data;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.kittyvt.domain.bnk.hirc.body.soundtype.action.Action;
@@ -37,5 +39,8 @@ public class HIRCBody {
     public ActorMixer actorMixer;
     @JsonProperty("Event")
     public Event event;
-
+    @JsonProperty("TimeModulator")
+    public TimeModulator timeModulator;
+    @JsonProperty("State")
+    public State state;
 }

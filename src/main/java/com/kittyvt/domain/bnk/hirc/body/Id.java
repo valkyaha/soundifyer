@@ -11,7 +11,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 public class Id {
 
     @JsonProperty("Hash")
-    public Integer hash;
+    public Long hash;
     @JsonProperty("String")
     public String idString;
 

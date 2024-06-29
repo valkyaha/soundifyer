@@ -19,15 +19,16 @@ public class ParamsDeserializer extends StdDeserializer<Object> {
     }
 
     @Override
-    public Object deserialize(JsonParser p, DeserializationContext ctxt) throws IOException {
+    public Object deserialize(JsonParser p, DeserializationContext context) throws IOException {
         JsonNode node = p.getCodec().readTree(p);
 
         if (node.isTextual()) {
             return node.asText();
         } else if (node.isObject()) {
             return p.getCodec().treeToValue(node, Params.class);
-        } else {
-            throw new IOException("Unexpected JSON type for params in action field");
         }
+
+        throw new IOException("Unexpected JSON type for params in action field");
+
     }
 }
