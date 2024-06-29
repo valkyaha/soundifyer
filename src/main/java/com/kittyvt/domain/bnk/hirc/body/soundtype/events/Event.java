@@ -16,6 +16,6 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 public class Event {
 
     @JsonProperty("actions")
-    public List<Integer> actions;
+    public List<Long> actions;
 
 }

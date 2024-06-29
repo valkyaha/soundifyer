@@ -8,9 +8,8 @@ import lombok.Data;
 import java.util.List;
 
 @Data
-public class Example {
+public class AudioConverted {
 
     @JsonProperty("sections")
     public List<Section> sections;
-
 }
