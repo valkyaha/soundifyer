@@ -16,11 +16,6 @@ public class Main {
     public static void main(String[] args) {
         try {
             Result result = getResult("");
-
-            List<HIRCObject> events = result.searcher().searchEvent(result.nodes(), "Play_c211006507");
-            List<HIRCObject> a = result.searcher().searchActions(events, result.nodes());
-            logger.info("Search actions result: {}", a);
-
             List<HIRCObject> list = new ArrayList<>();
             result.searcher().collectAllMatchingObjects("Play_c211006507", result.nodes(), list);
             logger.info("Number of matching objects: {}", list.size());
