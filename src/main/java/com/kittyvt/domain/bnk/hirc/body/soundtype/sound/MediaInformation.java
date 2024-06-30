@@ -9,18 +9,18 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
-    "source_id",
-    "in_memory_media_size",
-    "source_flags"
+        "source_id",
+        "in_memory_media_size",
+        "source_flags"
 })
 @Data
 public class MediaInformation {
 
     @JsonProperty("source_id")
-    public Integer sourceId;
+    public Long sourceId;
     @JsonProperty("in_memory_media_size")
-    public Integer inMemoryMediaSize;
+    public Long inMemoryMediaSize;
     @JsonProperty("source_flags")
-    public Integer sourceFlags;
+    public Long sourceFlags;
 
 }

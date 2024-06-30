@@ -19,6 +19,9 @@ dependencies {
     compileOnly("org.projectlombok:lombok:1.18.34")
     annotationProcessor("org.projectlombok:lombok:1.18.34")
 
+    implementation("org.slf4j:slf4j-api:2.0.12")
+    implementation("ch.qos.logback:logback-classic:1.5.3")
+
     testCompileOnly("org.projectlombok:lombok:1.18.34")
     testAnnotationProcessor("org.projectlombok:lombok:1.18.34")
 

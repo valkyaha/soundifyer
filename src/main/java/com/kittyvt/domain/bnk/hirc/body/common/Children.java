@@ -9,15 +9,14 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
 
-
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
-    "items"
+        "items"
 })
 @Data
 public class Children {
 
     @JsonProperty("items")
-    public List<Integer> items;
+    public List<Long> items;
 
 }

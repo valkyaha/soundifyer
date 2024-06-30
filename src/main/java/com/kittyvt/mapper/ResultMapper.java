@@ -11,13 +11,23 @@ import java.util.List;
 
 public class ResultMapper {
 
-    public static Result getResult() throws IOException {
+    private ResultMapper() {
+    }
+
+    public static Result getResult(String path) throws IOException {
         ObjectMapper mapper = new ObjectMapper();
-        File e = new File("src/main/resources/test.json");
-        AudioConverted section = mapper.readValue(e, AudioConverted.class);
+        AudioConverted section = mapper.readValue(file(path), AudioConverted.class);
 
         Searcher searcher = new Searcher();
         List<HIRCObject> nodes = section.getSections().get(1).getBody().getHirc().getObjects();
         return new Result(searcher, nodes);
+    }
+
+    private static File file(String path) {
+        if (path == null || path.isBlank()) {
+            return new File("src/main/resources/test.json");
+        }
+
+        return new File(path);
     }
 }
